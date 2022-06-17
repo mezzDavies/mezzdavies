@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #fbff3a;
+}
+
+.header {
+  margin-top: 1.3em;
+  margin-left: 1.3em;
+}
+
+h1 {
+  margin-bottom: 0.2em;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 300;
+  margin-top: 0;
+}
+
+p {
+  text-align: center;
+}
+.main {
+  padding-top: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
