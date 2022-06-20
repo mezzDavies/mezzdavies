@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #fbff3a;
+  background-color: rgb(252 252 60);
 }
 
 .header {
@@ -25,6 +25,7 @@ h2 {
 
 p {
   text-align: center;
+  cursor: help;
 }
 .main {
   padding-top: 15em;
