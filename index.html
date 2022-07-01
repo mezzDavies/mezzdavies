@@ -2,8 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      var loadingArr = [
+        "maybe check back in a week...",
+        "seriously...",
+        "nothing to see here...",
+        "yet...",
+        "loading...",
+      ];
+
+      // if i === 0 then no delay
+      // if i > 0 && i % 2 != 0 then less delay
+      function textSequence(i) {
+        // if (i === 0) {
+        //   document.getElementById("loading-text").innerHTML = -textArr[i];
+        //   textSequence(++i);
+        // } else
+        if (loadingArr.length > i) {
+          setTimeout(function () {
+            document.getElementById("loading-text").innerHTML = loadingArr[i];
+            textSequence(++i);
+          }, 3000);
+        } else if (loadingArr.length == i) {
+          // Loop
+          textSequence(0);
+        }
+      }
+      textSequence(0);
+    </script>
     <title>Mezz Davies</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -14,7 +40,7 @@
     </header>
 
     <main class="main">
-      <p title="Come back soon 😁">loading...</p>
+      <p id="loading-text" title="Come back soon 😁">loading...</p>
     </main>
   </body>
 </html>
