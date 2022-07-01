@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      var loadingArr = [
+      const loadingArr = [
         "maybe check back in a week...",
         "seriously...",
         "nothing to see here...",
@@ -17,8 +17,7 @@
             document.getElementById("loading-text").innerHTML = loadingArr[i];
             textSequence(++i);
           }, 3000);
-        } else if (loadingArr.length == i) {
-          // Loop
+        } else if (loadingArr.length === i) {
           textSequence(0);
         }
       }
