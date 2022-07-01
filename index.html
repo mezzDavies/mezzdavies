@@ -11,13 +11,7 @@
         "loading...",
       ];
 
-      // if i === 0 then no delay
-      // if i > 0 && i % 2 != 0 then less delay
       function textSequence(i) {
-        // if (i === 0) {
-        //   document.getElementById("loading-text").innerHTML = -textArr[i];
-        //   textSequence(++i);
-        // } else
         if (loadingArr.length > i) {
           setTimeout(function () {
             document.getElementById("loading-text").innerHTML = loadingArr[i];
